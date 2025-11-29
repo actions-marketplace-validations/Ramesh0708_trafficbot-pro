@@ -6,6 +6,8 @@ TrafficBot Pro fetches real-time traffic news from trusted sources, filters and 
 
 Perfect for teams, offices, commuters, and IT operations groups who rely on regular traffic visibility.
 
+--------------------------------------------------------------
+
 ✨ Features
 
 🌍 Multi-city support (choose ANY city)
@@ -25,6 +27,8 @@ Perfect for teams, offices, commuters, and IT operations groups who rely on regu
 🔌 Easy plug-and-play setup with only 1 secret required
 
 📩 Microsoft Teams webhook support
+
+------------------------------------------------------------------------
 
 🚀 Example Workflow
 
@@ -47,10 +51,16 @@ jobs:
           city: "Pune"   # Change to any city (e.g., Mumbai, Bangalore, New York)
           webhook: ${{ secrets.TEAMS_WEBHOOK_URL }}
 
+----------------------------------------------------------------------
+
 🔧 Inputs
-Input Name	Required	Description
-city	✅ Yes	City name for traffic updates (e.g., Pune, Mumbai, Delhi, London)
-webhook	✅ Yes	Microsoft Teams Incoming Webhook URL
+Input Name	Required	  Description
+city	       ✅ Yes	  City name for traffic updates (e.g., Pune, Mumbai, Delhi, London)
+webhook	     ✅ Yes     Microsoft Teams Incoming Webhook URL
+
+
+--------------------------------------------------------------
+
 💬 Output Example (Microsoft Teams)
 🚦 TrafficBot Pro • 28 Nov 2025 • 10:42 AM
 🌇 Evening traffic update — plan ahead!
@@ -63,6 +73,8 @@ webhook	✅ Yes	Microsoft Teams Incoming Webhook URL
 
 🗺️ Live Map: Baner Traffic Map  
 🎉 Fun Fact: Hinjewadi Phase 3 sees surge every Monday morning.
+
+----------------------------------------------------------------
 
 🧩 How It Works
 
@@ -80,13 +92,7 @@ Sends everything to Microsoft Teams using your webhook
 
 Logs archived results for your reference
 
-🖼️ Branding
 
-TrafficBot Pro uses GitHub Marketplace built-in branding:
-
-branding:
-  icon: traffic-light
-  color: green
 
 🔐 Setup Required
 
@@ -100,9 +106,13 @@ TEAMS_WEBHOOK_URL = Your Teams incoming webhook
 
 That’s it! Your bot is fully automated.
 
+
+
 📝 License
 
 This project is licensed under the MIT License.
+
+
 
 ⭐ Support the Project
 
