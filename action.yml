@@ -1,0 +1,32 @@
+name: "TrafficBot Pro"
+description: "Automated city traffic updates for Microsoft Teams using GitHub Actions."
+author: "Ramesh Choudhary"
+branding:
+  icon: "traffic-light"
+  color: "yellow"
+
+inputs:
+  city:
+    description: "City name (e.g., Pune, Mumbai, Delhi)"
+    required: true
+  webhook:
+    description: "Microsoft Teams Webhook URL"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        pip install -r $GITHUB_ACTION_PATH/requirements.txt
+
+    - name: Run TrafficBot Pro
+      shell: bash
+      run: |
+        python $GITHUB_ACTION_PATH/trafficbot_pro.py --city "${{ inputs.city }}" --webhook "${{ inputs.webhook }}"
